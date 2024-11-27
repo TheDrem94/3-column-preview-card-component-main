@@ -1,0 +1,11 @@
+:root {
+    --clr-primary-orange: hsl(31, 77%, 52%);
+    --clr-primary-cyan: hsl(184, 100%, 22%);
+    --clr-primary-dark-cyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-paragraph: hsla(0, 0%, 100%, 0.75);
+    --clr-light-gray: hsl(0, 0%, 95%);
+
+    --fw-regular: 400;
+    --fw-bold: 700
+}
