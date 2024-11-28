@@ -9,3 +9,81 @@
     --fw-regular: 400;
     --fw-bold: 700
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    font-family: Lexend Deca, Big Shoulders Display;
+}
+
+h1 {
+    font-family: Big Shoulders Display;
+    font-weight: var(--fw-bold);
+    color: var(--clr-light-gray);
+}
+
+p {
+    font-family: Lexend Deca;
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-paragraph);
+}
+
+button {
+    font-family: Lexend Deca;
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-light-gray);
+    border-radius: 3rem;
+    padding: 0.5rem;
+    border: 0.2rem solid var(--clr-neutral-paragraph);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: var(--clr-neutral-paragraph);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    max-width: 20rem;
+    overflow: hidden;
+}
+
+.sedan-box {
+    padding: 3rem;
+    background-color: var(--clr-primary-orange);
+}
+
+.suv-box {
+    padding: 3rem;
+    background-color: var(--clr-primary-cyan);
+    color: var(--clr-primary-cyan);
+}
+
+.lux-box {
+    padding: 3rem;
+    background-color: var(--clr-primary-dark-cyan);
+    color: var(--clr-primary-dark-cyan);
+}
+
+@media (min-width: 42em) {
+
+    button {
+        margin-top: 5rem;
+    }
+
+    .container {
+        display: flex;
+        max-width: 480rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+    }
+}
